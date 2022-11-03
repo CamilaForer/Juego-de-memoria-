@@ -6,7 +6,6 @@ function barajaTarjetas(lasTarjetas) {
   resultado = totalTarjetas.sort(function () {
     return 0.5 - Math.random();
   });
-
   //pista por aca falta un return (Que regresa la función)
   return resultado;
 }

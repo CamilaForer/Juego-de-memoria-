@@ -2,9 +2,10 @@
 function acierto(lasTarjetas) {
   lasTarjetas.forEach(function(elemento) {
     //pista aca falta llamar la función
-    elemento.classList.add("acierto");
+    elemento.classList.add("acertada");
   });
   document.querySelector("#sonido-acierto").play();
+  
 }
   //pista aca falta crear  la función :(
  function error(lasTarjetas) {
