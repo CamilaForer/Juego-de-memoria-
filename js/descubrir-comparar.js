@@ -4,7 +4,6 @@ function descubrir() {
   var totalDescubiertas = document.querySelectorAll(
     ".descubierta:not(.acertada)"
   );
-
   if (totalDescubiertas.length > 1) {
     return;
   }
@@ -16,15 +15,14 @@ function descubrir() {
   if (descubiertas.length < 2) {
     return;
   }
-  //pista aca falta ubicar la palabra descubiertas para invicar la funcion de las cartas
-  comparar();
+  //pista aca falta ubicar la palabra descubiertas para invocar la funcion de las cartas
+  comparar(descubiertas);
   actualizaContador();
   tarjetasPendientes = document.querySelectorAll(".tarjeta:not(.acertada)");
   if (tarjetasPendientes.length === 0) {
     setTimeout(finalizar, 1000);
   }
 }
-
 function comparar(tarjetasAComparar) {
   if (
     tarjetasAComparar[0].dataset.valor === tarjetasAComparar[1].dataset.valor

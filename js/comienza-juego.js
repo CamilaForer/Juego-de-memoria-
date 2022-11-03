@@ -1,10 +1,9 @@
 // Escribimos los niveles dinámicamente
 escribeNiveles();
-
 // Asignamos eventos iniciales
   //pista aca un evento Click decifra donde ponerlo
 document.querySelectorAll(".reiniciar").forEach(function(elemento) {
-  elemento.addEventListener("", reiniciar);
+  elemento.addEventListener("click", reiniciar);
 });
 
 document
@@ -18,9 +17,8 @@ document
   .querySelector("#control-nivel")
   .addEventListener("click", muestraMenuNiveles);
 document
-  //pista aca falta addEventListenet decifra donde ponerlo
   .querySelector("#cierra-niveles")
-  .("click", ocultaMenuNiveles);
+  .addEventListener("click", ocultaMenuNiveles);
 
 document.querySelectorAll(".nivel").forEach(function(elemento) {
   elemento.addEventListener("click", cambiaNivel);

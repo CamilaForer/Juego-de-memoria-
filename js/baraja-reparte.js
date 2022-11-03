@@ -1,4 +1,4 @@
-//pista aca averigua para que sierve el metodo Marh
+//pista aca averigua para que sierve el metodo Math
 
 function barajaTarjetas(lasTarjetas) {
   var resultado;
@@ -8,7 +8,7 @@ function barajaTarjetas(lasTarjetas) {
   });
 
   //pista por aca falta un return (Que regresa la función)
-  resultado;
+  return resultado;
 }
 
 function reparteTarjetas(lasTarjetas) {

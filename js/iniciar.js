@@ -19,7 +19,6 @@ function iniciar() {
     document.querySelector("#cronometro").classList.add("cronometro-oculto");
   }
 }
-
 function reiniciar() {
   nivelActual = 0;
   actualizaNivel();
