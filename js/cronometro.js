@@ -1,17 +1,17 @@
 function iniciaCronometro() {
-  var segundos = 15;
-  var minutos = 0;
+  var segundos = 30;
+  var minutos = 1;
   var segundosTexto;
   var minutosTexto;
   //Determinar el tiempo en segundo para poder tener un mejor contador recuerda no pasar de 60segundos
   function actualizaContador() {
     segundos--;
     if (segundos < 0) {
-      segundos = 10;
+      segundos = 20;
       minutos--;
     }
     if (minutos < 0) {
-      segundos = 0;
+      segundos = 20;
       minutos = 0;
       clearInterval(cronometro);
       timeOver();
